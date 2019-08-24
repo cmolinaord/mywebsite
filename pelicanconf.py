@@ -42,9 +42,9 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-STATIC_PATHS = ['pdf', 'extra/favicon.ico', 'images']
+STATIC_PATHS = ['pdf', 'extra', 'images']
 EXTRA_PATH_METADATA = {
-    'extra/favicon.png': {'path': 'favicon.png'}
+    'extra/favicon.png': {'path': 'favicon.ico'}
 }
 
 DISQUS_SITENAME = "https-cmolinaord-github-io"
