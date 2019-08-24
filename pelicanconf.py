@@ -11,7 +11,7 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/Madrid'
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = 'en'
 
 THEME = 'themes/pelican-blue'
 
