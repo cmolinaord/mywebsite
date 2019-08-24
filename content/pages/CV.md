@@ -3,7 +3,7 @@ Title: CV
 # Personal details
 * Carlos Molina Ordóñez
 * From Sevilla, Spain
-* Living near Barcelona
+* Living in Barcelona
 * carlosmolina.ord@gmail.com
 
 # Education
@@ -14,6 +14,10 @@ Title: CV
 * (2002-2006) **Secondary school**, IES Severo Ochoa, San Juan de Aznalfarache.
 
 # Experience
+* (2019) **Hardware engineer**, [NanoSat Lab](https://nanosatlab.upc.edu/en), Barcelona.
+As part of my Master's Thesis I was working in NanoSat Lab in Barcelona designing the hardware
+of an On-board computer for Cubesats. In this period I learnt how to design the schematic, layout of the PCB
+and also soldering the components and electrical testing of them.
 * (2017-2018) **Home teacher**, (Maths, physics...), Seville. ~100 hours
 * (2013-2017) **Analog design and layout of integrated circuits**, *Teledyne Anafocus*, Seville.
 I was in charge of design of electronic analog blocks for CMOS image sensors manufactured
@@ -27,6 +31,7 @@ of 8-10 people incluiding analog and digital designers.
 # Languages
 * **Spanish**: native
 * **English**: Cambridge certificate B2 (score 172)
+* **Catalan**: basic level
 * **French**: basic level
 
 # Computer skills
@@ -36,7 +41,8 @@ of 8-10 people incluiding analog and digital designers.
 * **Programming languages**: Python, C, bash, markdown
 * **Scientific software**: Matlab, Mathematica, Geogebra
 * **Version control**: Git
-* **Electronics**: Arduino, Raspberry Pi
+* **Electronic hardware**: Arduino, Raspberry Pi
+* **Electronic design tools**: Altium
 * **Graphics design**: Inkscape, GIMP, Blender, OpenSCAD, 3D printing
 
 Here is available my complete [CV]({static}/pdf/cv.pdf).
