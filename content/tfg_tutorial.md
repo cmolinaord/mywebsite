@@ -20,7 +20,7 @@ es necesario que haya un código, me explico, que sería menos efectivo hacer un
 de versiones con Git de un archivo de texto de Microsoft Word o LibreOffice, ya
 que éstos encapsulan el archivo en un binario codificado.
 
-Usando Git iba a ser capáz de llevar un control de versiones exhaustivo, muy útil a
+Usando Git iba a ser capaz de llevar un control de versiones exhaustivo, muy útil a
 la hora de escribir un trabajo de éstas características. Quiero escribir éste artículo
 para aquellos que tengan que realizar su Trabajo de Fin de Grado, Master o Tesis, con
 el objetivo de mostrarles la forma en que yo lo he hecho, que es más fácil de lo
@@ -30,13 +30,13 @@ y otras carreras científicas o técnicas, es relativamente común saber usar La
 pero es mucho más raro el uso de controles de versiones, más habitual entre programadores
 e informáticos.
 
-Aprender LaTeX no es tan dificil por otra parte. Yo digo que sé usarlo, pero realmente
-cada vez que me pongo a escribir, estoy contínuamente consultando manuales, tutoriales
+Aprender LaTeX no es tan difícil por otra parte. Yo digo que sé usarlo, pero realmente
+cada vez que me pongo a escribir, estoy continuamente consultando manuales, tutoriales
 y foros para las dudas que me surgen. Y esa es realmente la forma de aprender,
 yo no he asistido a ningún curso ni nada por el estilo. Así, que si no lo usas todavía,
 atrévete a probarlo, verás que con poco esfuerzo consigues un texto muy bonito, y con
 la ventaja de que está escrito en un código, que cada vez que lo compilas, el resultado
-es exáctamente el mismo, nada de esos problemas de los procesadores de texto tradicionales,
+es exactamente el mismo, nada de esos problemas de los procesadores de texto tradicionales,
 que mueves un párrafo y todas las tablas e imágenes se te van a la página que no quieres
 o cosas así.
 
@@ -52,7 +52,7 @@ de nuestro repositorio a los servidores de GitHub por si queremos tenerlo dispon
 compañeros, o desde otro ordenador, o simplemente tener una copia de seguridad. Hay otras
 opciones, otros servicios como GitLab u otros, pero no bueno, yo usé mi cuenta de GitHub.
 
-Para empezar créate un directorio TFG/ donde tendremos todo el trabajo. Como queremos
+Para empezar crea un directorio TFG/ donde tendremos todo el trabajo. Como queremos
 tener un control de versiones de (casi) todo lo que hay aquí dentro, vamos a inicializar un
 repositorio de Git aquí.
 
@@ -80,21 +80,21 @@ git clone <URL>
 
 Lo que creará el directorio TFG (o el nombre del directorio) con el proyecto vacío
 inicializado, listo para empezar. Para saber más sobre como crear repositorios y como
-manejarlos, os recomiendo mirar la docuentación de Git y GitHub, que están muy bien:
+manejarlos, os recomiendo mirar la documentación de Git y GitHub, que están muy bien:
 * [Git en español](https://git-scm.com/book/es/v2)
 * [GitHub](https://help.github.com/)
 
 Dentro de esta carpeta iremos creando varios subdirectorios para organizar todo
 lo que el proyecto necesita, código fuente Latex, imágenes, el resultado en PDF...
 
-Para empezar a escribir en Latex, créate un directorio tex/ y uno pdf/
+Para empezar a escribir en Latex, crea un directorio tex/ y uno pdf/
 ```
 mkdir tex pdf
 ```
 
 En tex/ podemos empezar a escribir en archivos .tex, nuetro trabajo. Mi recomendación
 es dividir el proyecto en varios archivos, por ejemplo uno por cada capítulo, otro
-para la portada, y tener un archivo principal que llame a los otros en órden.
+para la portada, y tener un archivo principal que llame a los otros en orden.
 
 ![tex_folder]({static}/images/tfg_folders_tex.png)
 
@@ -117,7 +117,7 @@ La forma en la que yo he trabajado ha sido escribir directamente código LaTeX e
 archivos de texto plano mediante un editor de texto que a mi me gusta mucho llamado
 [Atom](https://atom.io/). De hecho es el editor que suelo usar para todos mis proyectos
 de programación, es bastante configurable, y puedes añadirle extensiones y plug-ins
-para por ejemplo resaltar el texto con colores segun el lenguaje de programación.
+para por ejemplo resaltar el texto con colores según el lenguaje de programación.
 Yo lo uso para Latex, Python, C, bash...
 
 En un entorno como Linux, a mi me gusta crear alias a los proyectos en los que trabajo,
@@ -132,7 +132,7 @@ alias load_tfg='export WORKDIR="~/Documents/TFG" && cdw && atom . '
 ```
 Que automáticamente nos llevaría a la carpeta del proyecto (Documents/TFG) en tu home,
 y una vez allí lanzaría el editor de texto atom para empezar a trabajar.
-He incluido también un alias, cdw, que simpelemente hace:
+He incluido también un alias, cdw, que simplemente hace:
 ```
 alias cdw='cd $WORKDIR'
 ```
@@ -147,7 +147,7 @@ con el código LaTeX, incluída la bibliografía.tex (sobre la que ahora dedicar
 apartado propio) y la configuración de estilo en ```mi_estilo.sty```.
 
 El resto de carpetas serán del estilo, img/ (para imágenes jpg, png), svg/ (para los
-archivos de graficos vectoriales, que como son un código, se puede tener un control
+archivos de gráficos vectoriales, que como son un código, se puede tener un control
 de versiones bueno), y cualquier otro archivo que uséis en vuestro trabajo, como
 datos experimentales en CSV, texto, scripts de Matlab o similares.
 También recomiendo, en el caso de imágenes retocadas o con varias capas, que podamos
@@ -162,14 +162,14 @@ revisión o mejora del documento. En el siguiente apartado explicaré uno que us
 El Makefile, para los que no estéis al corriente de lo que es, se trata de un
 mecanismo de ayuda a la compilación de programas, muy usado por ejemplo en C/C++.
 La idea es que el makefile te verifica si hay cosas ya compiladas para no repetir
-trabajo inutil. En el caso de LATEX ya existe un paquete que te ayuda a eso, y
+trabajo inútil. En el caso de LATEX ya existe un paquete que te ayuda a eso, y
 por ejemplo administra bien el tema de las referencias, tablas de contenido y eso.
 Si no lo sabéis, para que las referencias y las tablas de contenido se muestren bien
 en el documento final, latex debe hacer dos o más compilaciones, ya que la primera
 encuentra donde están las cosas referenciadas y las guarda en algún archivo temporal,
 y luego las referencia realmente.
 
-Si usaís el compliador de latex "tal cual" (pdflatex ejemplo.tex), puede que la primera vez os aparezcan
+Si usáis el compilador de latex "tal cual" (pdflatex ejemplo.tex), puede que la primera vez os aparezcan
 referencias a sitios perdidos o desconocidos así: [?]
 
 El paquete que he comentado que se encarga de arreglar esto es **latexmk**, y
@@ -234,13 +234,13 @@ debug_warnings:
 	grep -n -A1 "^%WARNING" $(SRC_DIR)/*.tex | grep -v "WARNING" | sed 's/-%/: /'
 	echo " "
 ```
-Con lo que, al ejecutar el comando ```make_debug_warnings```, me aparecería:
+Con lo que, al ejecutar el comando ```make debug_warnings```, me aparecería:
 ```
 Mostrando lineas con WARNINGS:
 tex/archivo_con_warnings.tex-25: Revisar este punto porque tal y cual
 tex/otro_archivo.tex-63: Otro error que corregir aqui
 ```
-Monstrando en que archivo y en que línea están los warnings, con la idea de
+Mostrando en que archivo y en que línea están los warnings, con la idea de
 revisarlos (y eliminar las anotaciones) antes de imprimir la versión definitiva.
 
 Otra cosa que quiero mencionar es un script interesante que creé y que lo llamaba mediante
@@ -251,8 +251,8 @@ debug_figures_unused:
 ```
 El script es un sencillo programa en bash que va a buscar en las carpetas de imágenes
 cuales de ellas no están referidas en el código latex, siendo una forma más
-de revisar que las imágenes que he incluído son las que quiero incluir y que no
-he dejado ninguna imágen interesante sin usar. Lo ideal, sería mantener limpio el
+de revisar que las imágenes que he incluido son las que quiero incluir y que no
+he dejado ninguna imagen interesante sin usar. Lo ideal, sería mantener limpio el
 directorio de imágenes, y quitar las que realmente no quiera usar, para que esta lista
 se reduzca a cero si todo está bien.
 
@@ -283,7 +283,7 @@ no los incluya en el repositorio. En nuestro caso es recomendable no incluir los
 ya que se pueden compilar cada vez que queramos. También incluiremos algunos resultados
 de la compilación que son auxiliares. En mi caso también he incluido el directorio svg-inkscape/
 que contiene resultados intermedios de la compilación de los SVG que se incluyen
-en el documento, y que los proceso con una libreria de Inkscape/latex.
+en el documento, y que los proceso con una librería de Inkscape/latex.
 Así quedaría mi .gitignore:
 
 ```
@@ -305,10 +305,10 @@ documentos bibliográficos y referencias. Nos lo explicaron en una sesión infor
 sobre los TFG organizada por la [Biblioteca](https://bib.us.es) de la
 [Universidad de Sevilla](www.us.es), y la verdad es que me ha gustado bastante, sobre
 después de que lo recomendaran también otros profesores investigadores de la facultad
-a los que aprecio mucho, como es Rocio del Rio, de microelectrónica.
+a los que aprecio mucho, como es Rocío del Rio, de microelectrónica.
 
-Mandeley también está disponible para Linux, pero también existen otros gestores
-de biblografía que no conozco. Pues eso, que para combinar este gestor, o cualquier
+Mendeley también está disponible para Linux, pero también existen otros gestores
+de bibliografía que no conozco. Pues eso, que para combinar este gestor, o cualquier
 otro, lo que yo hice es exportar la lista de libros, artículos y referencias que
 tenía en una carpeta de Mendeley mediante el plug-in para LaTeX (BibTEX). Esto
 te crea un artículo ```nombre.bib``` que lo guardas donde quieras, y luego lo
