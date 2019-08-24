@@ -39,4 +39,4 @@ of 8-10 people incluiding analog and digital designers.
 * **Electronics**: Arduino, Raspberry Pi
 * **Graphics design**: Inkscape, GIMP, Blender, OpenSCAD, 3D printing
 
-Here is available my complete [CV]({filename}/pdf/cv.pdf).
+Here is available my complete [CV]({static}/pdf/cv.pdf).

@@ -10,7 +10,7 @@ Este año he tenido que escribir y defender mi Trabajo de Fin de Grado para term
 el Grado en Física por la Universidad de Sevilla. Y para evitar acabar con
 algo como ésto:
 
-![meme]({filename}/images/tfg_meme_versiones.jpg)
+![meme]({static}/images/tfg_meme_versiones.jpg)
 
 se me ocurrió usar LaTeX y un sistema de control de versiones como Git. Bueno,
 realmente lo de usar LaTeX ya lo tenía claro desde el principio, ya que me
@@ -96,7 +96,7 @@ En tex/ podemos empezar a escribir en archivos .tex, nuetro trabajo. Mi recomend
 es dividir el proyecto en varios archivos, por ejemplo uno por cada capítulo, otro
 para la portada, y tener un archivo principal que llame a los otros en órden.
 
-![tex_folder]({filename}/images/tfg_folders_tex.png)
+![tex_folder]({static}/images/tfg_folders_tex.png)
 
 En mi caso, el fichero tfg.tex llama a los otros capítulos y también a un archivo
 mi_estilo.sty dónde agrupo las librerías y comandos que usa mi documento de LaTeX.
@@ -364,7 +364,7 @@ en la que basarme. Hay una [página muy interesante con plantillas de LATEX](htt
 en la que encontré una [plantilla que me gustó](https://www.latextemplates.com/template/academic-title-page).
 
 Tras añadirle la foto y retocarla un poco, me quedó algo así:
-![portada]({filename}/images/tfg_titlepage.png)
+![portada]({static}/images/tfg_titlepage.png)
 
 También es verdad que esto de la portada depende de la Universidad, facultad o
 incluso departamento, quizás en unos casos estás más obligado a seguir un estilo

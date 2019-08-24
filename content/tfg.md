@@ -27,5 +27,5 @@ El tema del trabajo nació a raíz de mi contribución como empleado de "[Anafoc
 una empresa de microelectrónica basada en Sevilla que se dedica al diseño, testeo y producción de
 sensores de imágen CMOS inteligentes con aplicación industrial, médica y científica.
 
-![pdf_icon]({filename}/extra/pdf_icon.png)
-[Layout de canales de lectura por columna para sensores de imágen CMOS: técnicas, extracción y simulación]({filename}/pdf/tfg.pdf)
+![pdf_icon]({static}/extra/pdf_icon.png)
+[Layout de canales de lectura por columna para sensores de imágen CMOS: técnicas, extracción y simulación]({static}/pdf/tfg.pdf)

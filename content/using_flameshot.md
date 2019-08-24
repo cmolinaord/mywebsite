@@ -56,7 +56,7 @@ This would start a background application which allows you to take a screenshot
 whenever you want. If you have a notification panel like, in my case, XFCE, you'll
 see a new icon on it:
 
-![Flameshot notification panel icon]({filename}/images/flameshot_panel.png)
+![Flameshot notification panel icon]({static}/images/flameshot_panel.png)
 
 Left click on the icon will launch a screenshot gui where you can select an area to be
 captured.
@@ -65,19 +65,19 @@ Right click will open a menu with the two options showed in the previous image.
 The configuration option will open a friendly GUI configuration menu where you can
 change the interface appereance and the buttons displayed around the capture area.
 
-![Interface configuration]({filename}/images/flameshot_config_interface.png)
+![Interface configuration]({static}/images/flameshot_config_interface.png)
 
 In the second menu you can configure the authomatic name given to the captures. You
 can use the typical unix time format, but there's also buttons to write it down directly.
 
-![Filename configuration]({filename}/images/flameshot_config_filename.png)
+![Filename configuration]({static}/images/flameshot_config_filename.png)
 
 And in the last menu you can configure general behavior of the application, as desktop
 notifications, tray icon or allow the application to launch on computer boot. You can
 also export your configurations into a new file, import from other file or set the
 default configuration.
 
-![General configuration]({filename}/images/flameshot_config_general.png)
+![General configuration]({static}/images/flameshot_config_general.png)
 
 By default, the configuration file is stored in:
 ```
@@ -87,7 +87,7 @@ By default, the configuration file is stored in:
 The other buttom in the tray icon will show you a typical "About" window, with information
 about the version number and some useful shortcuts for the gui interface.
 
-![About flameshot]({filename}/images/flameshot_about.png)
+![About flameshot]({static}/images/flameshot_about.png)
 
 ## By command line
 You can also launch flameshot captures using the comand line terminal which allows you
@@ -95,17 +95,17 @@ to do some interesting things. Flameshot has implemented a bash completion tool,
 if you're using Bash, you would be able to complete the command through the posible tools
 and options. Completing the command flameshot with TAB key you could see:
 
-![Bash completion]({filename}/images/flameshot_bash_completion.png)
+![Bash completion]({static}/images/flameshot_bash_completion.png)
 
 And always you can write ```--help``` and you'll get a help message explaining the
 posible options and how to use them.
 
-![Command-line help]({filename}/images/flameshot_config_help.png)
+![Command-line help]({static}/images/flameshot_config_help.png)
 
 By using the command line you have infinite posibilites for scripting or authomatic
 screen capture for example. Also you can define a delay in milliseconds to capture the image.
 
-![Command-line full help]({filename}/images/flameshot_full_help.png)
+![Command-line full help]({static}/images/flameshot_full_help.png)
 
 ## Definig shortcuts
 In order to make easier the capture of your screen, I like to define a keyboard shortcut
@@ -113,7 +113,7 @@ to launch Flameshot.
 
 In may case, with XFCE, I've defined two shortcut in the Keyboard menu from xfce:
 
-![Keyboard shortcuts]({filename}/images/flameshot_keyboard.png)
+![Keyboard shortcuts]({static}/images/flameshot_keyboard.png)
 
 You can use some of this examples too:
 
