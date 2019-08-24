@@ -1,4 +1,6 @@
-PY?=python3
+# Keep Python command as "python" because it's intented to be run within a Conda enviornment
+# that would force the python version to use (the recommended one is 2.7)
+PY?=python
 PELICAN?=pelican
 PELICANOPTS=
 
@@ -50,10 +52,10 @@ regenerate:
 serve:
 ifdef PORT
 	echo "http://localhost:$(PORT)"
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
+	$(PY) -m pelican --listen output $(PORT)
 else
 	echo "http://localhost:8000"
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+	$(PY) -m pelican --listen output
 endif
 
 serve-global:
