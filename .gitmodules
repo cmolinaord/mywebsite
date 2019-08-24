@@ -1,0 +1,6 @@
+[submodule "output"]
+	path = output
+	url = git@github.com:cmolinaord/cmolinaord.github.io.git
+[submodule "themes/pelican-blue"]
+	path = themes/pelican-blue
+	url = git@github.com:cmolinaord/pelican-blue.git
